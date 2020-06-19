@@ -6,12 +6,23 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title : Text("App Bar Title"),
       centerTitle: true,
+      backgroundColor: Colors.deepPurple[200] ,
     ),
     body: Center(
-      child: Text('Hello World !'),
+      child: Text(
+        'hello world !',
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight : FontWeight.bold ,
+          letterSpacing: 2.0,
+          color: Colors.grey[700] ,
+        ),
+        ),
     ),
-    floatingActionButton: FloatingActionButton( onPressed: null,
+    floatingActionButton: FloatingActionButton( 
+      onPressed: () {},
       child: Text('Click'),
+      backgroundColor: Colors.deepPurple,
     ),
   ),
 ));
