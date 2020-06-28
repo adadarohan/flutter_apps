@@ -15,8 +15,13 @@ class House extends StatelessWidget {
         backgroundColor: Colors.deepPurple[200] ,
       ),
       body: Center(
-        child: Image(
-          image: AssetImage("assets/space2.jpg")
+        child: RaisedButton(
+          onPressed: () {
+            print('you clicked me !');
+          },
+          child: Text('Click Me'),
+          color : Colors.lightBlue ,
+
         ),
       ),
       floatingActionButton: FloatingActionButton( 
